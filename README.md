@@ -65,4 +65,8 @@ Screenshots are in `screenshots/` as `360.png`, `768.png`, `1024.png`, `1280.png
 
 ## What our group learned (leader writes this last)
 
-> (write your answer here)
+> We learned that mobile-first means designing the phone layout first and then adding to it with `min-width` media queries at 768, 1024 and 1280 px, instead of undoing desktop styles with `max-width`. The viewport meta tag is what makes the phone styles work: without it, the phone showed a tiny zoomed-out page.
+
+We practiced using CSS Grid for the page and footer layout and Flexbox for the navigation and the login form, and we learned to use rem and % for sizing. We also learned to make every tap target at least 48 px tall and to give every `:hover` style a matching `:focus-visible` style, so the page works for touch and keyboard users.
+
+For teamwork, we learned how to use Git branches, commits and pull requests, and that a reviewer must approve before merging. We ran into problems such as pushing from the wrong folder, a merged pull request that was reverted, and rejected pushes. We fixed them by checking `git log`, restoring the work on a new branch and pulling the latest `main` before continuing.

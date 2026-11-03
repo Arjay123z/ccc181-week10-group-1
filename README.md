@@ -33,7 +33,7 @@ npm run build        # must finish with no errors before you submit
 | --- | --- | --- | --- | --- |
 | 1 (leader) | | | `base.css` | |
 | 2 | | | `nav.css` | |
-| 3 | | | `form.css` | |
+| 3 |Dave Rolence Brian O. Benson |DaveB530| `form.css` | I worked on the Login Form styling using CSS. |
 
 ## Experiment 0: the page without the viewport tag
 

@@ -40,7 +40,7 @@ npm run build        # must finish with no errors before you submit
 What did the page look like in DevTools phone mode **before** adding the viewport meta tag?
 What changed **after** adding it?
 
-> (write your answer here)
+> Before adding the viewport meta tag, the page in DevTools phone mode (iPhone SE) looked zoomed out and tiny, as if a desktop-sized page had been shrunk to fit the phone screen. After adding `<meta name="viewport" content="width=device-width, initial-scale=1" />`, the page used the real phone width, so the text was normal size and the layout fit the screen.
 
 ## DevTools test results
 

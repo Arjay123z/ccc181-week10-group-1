@@ -55,8 +55,12 @@ What changed **after** adding it?
 
 Using **Show media queries** and dragging slowly from 360 px to 1280 px, the layout changed at these exact widths:
 
-> (write the widths here, and say whether any width looked broken)
-
+| Width | What must be true | Pass? |
+| --- | --- | --- |
+| 360 px | 1 column. Nav links stacked and 48px tall. Options and buttons stacked. Footer in 1 column. No sideways scrollbar. | ✅ Yes |
+| 768 px | Nav in one row (brand left, links right). Checkbox and link in one row. Two buttons side by side. | ✅ Yes |
+| 1024 px | Brand panel and login card side by side. Footer in 3 columns. Heading is larger. | ✅ Yes |
+| 1280 px | Content centered and stops at 1200px. | ✅ Yes |
 Screenshots are in `screenshots/` as `360.png`, `768.png`, `1024.png`, `1280.png`.
 
 ## What our group learned (leader writes this last)

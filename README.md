@@ -31,7 +31,7 @@ npm run build        # must finish with no errors before you submit
 
 | Member | Name | GitHub username | CSS file | What I did |
 | --- | --- | --- | --- | --- |
-| 1 (leader) | | | `base.css` | |
+| 1 (leader) | Roldan James Calisagan| Arjay123z | `base.css` | Added viewport meta tag and mobile-first layout with responsive grid, brand panel, and breakpoints at 768px, 1024px, and 1280px. |
 | 2 |Dan Jefferson B. Acera | djacera | `nav.css` |  I built the mobile-first navbar (Flexbox) and footer (Grid) in nav.css, with a row navbar at 768px and a three-column footer at 1024px. |
 | 3 |Dave Rolence Brian O. Benson |DaveB530| `form.css` | I worked on the Login Form styling using CSS. |
 

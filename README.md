@@ -61,6 +61,7 @@ Using **Show media queries** and dragging slowly from 360 px to 1280 px, the lay
 | 768 px | Nav in one row (brand left, links right). Checkbox and link in one row. Two buttons side by side. | ✅ Yes |
 | 1024 px | Brand panel and login card side by side. Footer in 3 columns. Heading is larger. | ✅ Yes |
 | 1280 px | Content centered and stops at 1200px. | ✅ Yes |
+
 Screenshots are in `screenshots/` as `360.png`, `768.png`, `1024.png`, `1280.png`.
 
 ## What our group learned (leader writes this last)

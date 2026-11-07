@@ -1,6 +1,9 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const { findByEmail } = require('./users');
 
 // Email Pattern
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -25,7 +28,22 @@ app.post('/api/v1/sessions', (req, res)=>{
         return res.status(400).json({error: 'Email and password are required.'});
     }
 
-    return res.status(401).json({error: 'Invalid email or password.'})
+    const user = findByEmail(email.trim());
+
+    if(!user || !bcrypt.compareSync(password, user.passwordHash)) {
+        return res.status(401).json({error: 'Invalid email or password.'});
+    }
+
+    const token = jwt.sign (
+        {sub: user.id, email: user.email },
+        process.env.JWT_SECRET,
+        { expiresIn: '1h' }
+    );
+
+    return res.status(200).json({
+        token,
+        user: {id: user.id, name: user.name, email: user.email },
+    })
 })
 
 
